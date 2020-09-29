@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadows</title>
+
+    <style>
+        .container{
+            display: flex;
+        }
+
+        .box{
+            padding: 1rem;
+            margin: 1rem;
+            background: coral;
+            color: white;
+
+            /* Shadows offest x | offeset y | color */
+
+            box-shadow: 10px 10px teal;
+
+             /* Shadows offest x | offeset y | blure | color */
+
+             box-shadow: 10px 10px 20px teal;
+
+             /* Nagivate values */
+
+             box-shadow: -5px -5px 20px teal;
+
+             /* Shadows offest x | offeset y | blure |spread-radius | color  */
+
+             box-shadow: 3px 3px 20px 1px rgba(0,0,0,0.3);
+
+
+             /* inset offest x | offeset y | color */
+
+             box-shadow: inset -3px -3px teal;
+             
+
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, dolores.</p>
+        </div>
+        <div class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, dolores.</p>
+        </div>
+        <div class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, dolores.</p>
+        </div>
+    </div>
+    
+</body>
+</html>

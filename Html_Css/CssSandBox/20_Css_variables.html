@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css variables</title>
+
+    <style>
+
+        :root{
+          
+            --light-color: #f4f4f4;
+            --primary-color: #333 ;
+            --secondary-color: #fff;
+
+            --max-width: 960px;
+
+            --box-1-width:1;
+            --box-2-width:2;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background: var(--light-color);
+            line-height: 1.4;
+        }
+
+        header{
+            background: var(--primary-color);
+            border-bottom: 5px var(--secondary-color)  solid;
+            color: white;
+            text-align: center;
+
+        }
+
+        .container{
+            display: flex;
+            max-width: var(--max-width);
+            margin: auto;
+        }
+
+        .box{
+            background: var(--primary-color);
+            border-bottom: 5px var(--secondary-color) solid;
+            color: white;
+            margin: 1rem;
+            padding: 1rem;
+        }
+
+        .box-1{
+            flex: var(--box-1-width);
+        }
+
+        .box-2{
+            flex: var(--box-2-width);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Css varibales</h1>
+    </header>
+
+    <div class="container">
+        <div class="box box-1">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, enim.</p>
+        </div>
+        <div class="box box-2">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, enim.</p>
+        </div>
+    </div>
+
+
+    
+</body>
+</html>

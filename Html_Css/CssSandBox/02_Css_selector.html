@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Selector</title>
+
+  
+    <style>
+
+        /* body font size */
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            line-height: 1.6em;
+        }
+          /*  is for class and # is for id */
+        .Primary-header {
+            color:black;
+        }
+
+        /* # is for IDs */
+        #Welcome{
+            background-color: #f4f4f4;
+        }
+         /* Multiple selector */
+        #Welcome, #About {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 5px;
+        }
+
+        #Welcome p span {
+            font-weight: bold;
+        }
+
+        #About p span {
+            font-style: italic;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div id="Welcome">
+        <h2 class="Primary-header">Welcome</h2>
+        <p>Lorem ipsum dolor sit amet consectetur <span> elit. Doloribus iure suscipit</span> excepturi mollitia qui ex fugit corporis, cum ipsum labore et adipisci dignissimos quam obcaecati sit rerum tempora, optio saepe repellendus. Assumenda in, tempora officiis voluptatibus fuga doloribus! Commodi et qui dolorum, cum fugiat dignissimos obcaecati numquam quae hic molestiae magnam voluptatibus fuga officiis omnis ducimus dolores accusamus suscipit dolorem, voluptates ad a ex nulla. Facere quaerat fuga culpa rerum earum, voluptate, sequi laudantium, fugit eum perferendis qui a eligendi aut odio voluptates aliquam dolores vitae possimus. Ad nemo velit eius veniam laudantium molestiae excepturi, perspiciatis eum obcaecati magni magnam.</p>
+    </div>
+    <br>
+    <div id="About">
+        <h2>About</h2>
+        <p>Lorem ipsum dolor sit amet, <span>consectetur</span> adipisicing elit. Libero, sequi!</p>
+    </div>
+    
+</body>
+</html>

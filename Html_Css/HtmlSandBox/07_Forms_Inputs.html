@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Inputs </title>
+</head>
+<body>
+    <form action="Process.Php">
+        <div>
+            <label for="Name">Name</label><br>
+            <input type="text" name="" id="" placeholder="Enter your name">
+
+        </div>
+        <br>
+        <div>
+            <label for="email">Email</label><br>
+            <input type="email" placeholder="Enter email">
+        </div>
+        <br>
+        <div>
+            <label for="message">Message</label><br>
+            <textarea name="message" rows="10" cols="50"></textarea>
+        </div>
+        <br>
+
+        <div>
+            <label for="sex">Sex</label>
+            <select name="sex" id="">
+                <option value="male" selected>Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            
+        </div>
+        <br>
+
+        <div>
+            <label for="age">Age</label><br>
+            <input type="number" name="age" id="">
+        </div>
+        <br>
+
+        <div>
+            <label for="birthday">birthday</label><br>
+            <input type="date" name="birthday" id="">
+        </div>
+        <br>
+
+        <div>
+            <label for="membership">membership</label>
+            <input type="radio" name="membership" id="" value="simple" checked> simple
+            <input type="radio" name="membership" id="" value="Normal"> Normal
+            <input type="radio" name="membership" id="" value="Hard"> Hard
+    
+        </div>
+
+        <br>
+
+        <div>
+        <label for="membership">I Like ....</label>
+        <input type="checkbox" name="membership" id="" value="Bike" checked> Bike
+        <input type="checkbox" name="membership" id="" value="Car"> Car
+        <input type="checkbox" name="membership" id="" value="plane"> plane
+    
+        </div>
+
+        <button type="submit">Submit</button>
+
+        <button type="reset">Reset</button>
+
+
+      
+    </form>
+    
+</body>
+</html>
